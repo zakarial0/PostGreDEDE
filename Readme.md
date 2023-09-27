@@ -25,8 +25,14 @@ hapus database
 ```
 
 membuat table (pulsa)
-```CREATE TABLE public.nama_table (
+```
+    CREATE TABLE public.nama_table (
     id SERIAL PRIMARY KEY,
     nama VARCHAR(100),
     saldo INT );
+```
+
+melihat semua table
+```
+    \dt
 ```
