@@ -66,3 +66,13 @@ menghapus data di tabel
 ```
 DELETE FROM <public.user> WHERE <id=2>;
 ```
+
+menghubungkan data tabel
+```
+ALTER TABLE public.provider ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES user(id);
+```
+
+mengambil data dari tabel 1 ke tabel lain
+```
+ SELECT <a.*, b.nama as kartu> FROM <public.user as a> LEFT JOIN <public.provider as b> ON <user_id=a.id>;
+```
