@@ -1,5 +1,13 @@
 # catatan command postgreSQL
 
+buat user 
+```
+create user 'nama' password 'apaaja' role 'superuser dll';
+```
+liat user
+```
+\du
+```
 login psql 
 ```
 psql --username=postgres
@@ -8,6 +16,9 @@ psql --username=postgres
 liat semua database
 ```psql
     \l
+
+    \l+
+    lebih detail
 ```
 clear terminal
 ```psql
